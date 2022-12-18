@@ -38,3 +38,39 @@ document.getElementById('tab-handler').addEventListener('click', function(e) {
         e.target.closest('button').classList.add('active');
 	}
 });
+
+
+if  (window.console) {
+     var  cons = console;
+     if  (cons) {
+console.clear();
+let styleTitle1 = `
+font-size: 20px;
+font-weight: 600;
+color: rgb(244,167,89);
+`
+let styleTitle2 = `
+font-size:12px;
+color: rgb(244,167,89);
+`
+let styleContent = `
+color: rgb(30,152,255);
+`
+let title1 = '涟漪的P5预告卡制作器'
+let title2 = `
+##     ## #### ########  #### ########  ########  ##       ########      ######   #######  ##     ## 
+##     ##  ##  ##     ##  ##  ##     ## ##     ## ##       ##           ##    ## ##     ## ###   ### 
+##     ##  ##  ##     ##  ##  ##     ## ##     ## ##       ##           ##       ##     ## #### #### 
+#########  ##  ########   ##  ########  ########  ##       ######       ##       ##     ## ## ### ## 
+##     ##  ##  ##   ##    ##  ##        ##        ##       ##           ##       ##     ## ##     ## 
+##     ##  ##  ##    ##   ##  ##        ##        ##       ##       ### ##    ## ##     ## ##     ## 
+##     ## #### ##     ## #### ##        ##        ######## ######## ###  ######   #######  ##     ##  `
+let content = `
+更新日期：2022-12-18
+主页:  https://hiripple.com
+`
+console.log(`%c${title1} %c${title2}
+%c${content}`, styleTitle1, styleTitle2, styleContent)
+       console.log('%c hiRipple(https://hiripple.com)\n警告：源码来自Github：https://github.com/skyventuree/p5cc','color:red;font-size:10px;');
+     }
+};
